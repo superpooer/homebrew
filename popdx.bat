@@ -1,6 +1,5 @@
 @echo off
-cd %*
+popd
 set filename=%cd%
 for %%a in ("%filename%") do ( set name=%%~nxa )
 prompt %name%$H[$+]$S
-dir
